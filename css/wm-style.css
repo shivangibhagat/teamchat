@@ -1,0 +1,593 @@
+body {
+    min-height: 100vh;
+}
+h1, h3, h5, h2, h6, h4 {
+    text-transform: capitalize !important;
+}
+a {
+    text-decoration: none !important;
+}
+ul {
+    padding: 0 !important;
+    list-style: none !important;
+    margin: 0 !important;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none !important;
+    /* border: none !important; */
+}
+button:focus {
+    outline: none !important;
+}
+.btn.focus, .btn:focus {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0)!important;
+}
+.padding-left {
+    padding-left: 0 !important;
+}
+.padding-right {
+    padding-right: 0 !important;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #000 !important;
+    background: none;
+    border: none;
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+}
+.my-btn{
+    background: no-repeat;
+    border: none;
+    padding: 0;
+    color: #fff;
+
+    text-transform: capitalize;
+}
+.my-btn:hover{
+    background: none;
+
+    color: #fff;
+}
+#team-dashboard #channel-list {
+    height: 100vh;
+    background: #203850;
+    padding-top: 10px;
+}
+#team-dashboard #channel-list #team-menu .team-name h5 {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+}
+#team-dashboard #channel-list #team-menu .team-user-name h6 {
+    display: inline-block;
+    color: #fff;
+
+}
+
+#team-dashboard #channel-list #team-menu .team-user-name .status {
+    color: #fff;
+    0.5;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+#team-dashboard #channel-list #team-menu .team-name span {
+    color: #fff;
+
+    font-size: 12px;
+    padding-left: 2px;
+}
+
+#team-dashboard #channel-list #team-menu .team-mute-notification a {
+    color: #fff;
+
+}
+
+#team-dashboard #channel-list #team-menu .team-user-name .presence-status{
+    color: green;
+    font-size: 10px;
+    padding-right: 3px;
+}
+#team-dashboard #foo .user-look h3{
+    color: #495050;
+    padding-top: 1.35em;
+}
+#team-dashboard #foo .set-status .dropright .dropdown-toggle::after {
+    margin-left: 8.88em;
+}
+#team-dashboard #foo .user-settings ul li a {
+    color: #495050;
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#team-dashboard #foo .user-settings ul li a:hover {
+    color: #fff;
+    background: #309fd0;
+}
+#team-dashboard #foo .set-status .dropright .dropdown-toggle {
+    color: #495050;
+    padding: .25rem 1.5rem;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+#team-dashboard #foo .set-status .dropright .dropdown-toggle:hover {
+    color: #fff;
+    background: #309fd0;
+}
+#team-dashboard #foo {
+    padding: .5rem 0;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    position: absolute;
+    left: 3rem;
+    display: none;
+    overflow-y: auto;
+    height: 80vh;
+    z-index: 1;
+    overflow-x: hidden;
+}
+#team-dashboard #foo .admin-look h3 {
+    color: #495050;
+    padding-top: 0.5em;
+}
+#team-dashboard #foo .admin-settings .dropright .dropdown-toggle {
+    color: #495050;
+    padding: .25rem 1.5rem;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+#team-dashboard #foo .admin-settings .dropright .dropdown-toggle:hover {
+    color: #fff;
+    background: #309fd0;
+}
+#team-dashboard #foo .admin-settings .dropright .dropdown-toggle::after {
+    margin-left: 7.7em;
+}
+#team-dashboard #foo .admin-settings ul li a {
+    color: #495050;
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#team-dashboard #foo .admin-settings ul li a:hover {
+    color: #fff;
+    background: #309fd0;
+}
+#team-dashboard #foo .workplace-settings ul li a {
+    color: #495050;
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#team-dashboard #foo .workplace-settings ul li a:hover {
+    color: #fff;
+    background: #309fd0;
+}
+#team-dashboard #foo .sign-in-to-another-workplace a {
+    color: #495050;
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#team-dashboard #foo .sign-in-to-another-workplace a:hover {
+    color: #fff;
+    background: #309fd0;
+}
+#team-dashboard #foo .chat-app a {
+    color: #495050;
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#team-dashboard #foo .chat-app a:hover {
+    color: #fff;
+    background: #309fd0;
+}
+/*  content of side bar after changes in laptop screen */
+#diff-channels .create-channel button {
+    padding-left: 1.75em;
+    font-size: 15px;
+}
+#diff-direct-msgs .browse-direct-msgs button span {
+    padding-left: 1.9em;
+    font-size: 15px;
+}
+#channel-list .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background: #0069d9;
+
+}
+#channel-list .nav-pills .nav-link {
+    border: none;
+    color: #fff;
+
+    padding: 0.1em 1em;
+}
+#channel-list .nav-pills .nav-link span {
+    display: none;
+}
+#channel-list .nav-pills .nav-link:hover span {
+    display: inline-block;
+    padding-left: 6.3rem;
+}
+
+#team-dashboard #foo1 {
+    padding: .5rem 0;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    position: absolute;
+    left: 10rem;
+    top: 2em;
+    display: none;
+    z-index: 1;
+    width: 100%;
+}
+#team-dashboard #foo1 .snooze-notifications h6 {
+    color: #495050;
+    padding-left: 1em;
+}
+#team-dashboard #foo1 .snooze-notifications ul li a {
+    color: #495050;
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+#team-dashboard #foo1 .snooze-notifications ul li a:hover {
+    color: #fff;
+    background: #309fd0;
+}
+#team-dashboard #foo1 .do-not-disturb a, .notification-preferences a {
+    color: #495050;
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+#team-dashboard #foo1 .do-not-disturb a:hover, .notification-preferences a:hover  {
+    color: #fff;
+    background: #309fd0;
+}
+#channel-list .nav-pills .nav-link i {
+    font-size: 15px;
+}
+#invite-people button span {
+    font-size: 15px;
+}
+#browse-channel-modal .modal-dialog, #create-channel-modal .modal-dialog{
+    max-width: 1000px;
+    margin: 1.75rem auto;
+}
+#browse-channel-modal .modal-body .search-channels .form-inline .form-control {
+    width: 89%;
+}
+#browse-channel-modal .modal-body .show-channels .dropdown button{
+   width: 100%;
+   background: none;
+   color: #6d767e;
+   text-align: left;
+   border-color: #ced4da;
+   text-transform: capitalize;
+}
+#browse-channel-modal .modal-body .show-channels .dropdown button span{
+   color: #000;
+}
+#browse-channel-modal .modal-body .show-channels {
+    margin-top: 1em;
+}
+#browse-channel-modal .modal-body .show-channels .dropdown .dropdown-menu{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100px;
+}
+#browse-channel-modal .modal-body .show-channels .dropdown .dropdown-toggle::after {
+    float: right;
+    margin-top: 0.65em;
+}
+#browse-channel-modal .modal-body .sort-channels .dropdown button{
+   width: 100%;
+   background: none;
+   color: #6d767e;
+   text-align: left;
+   border-color: #ced4da;
+   text-transform: capitalize;
+}
+#browse-channel-modal .modal-body .sort-channels .dropdown button span{
+   color: #000;
+}
+#browse-channel-modal .modal-body .sort-channels {
+    margin-top: 1em;
+}
+#browse-channel-modal .modal-body .sort-channels .dropdown .dropdown-menu{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100px;
+}
+#browse-channel-modal .modal-body .sort-channels .dropdown .dropdown-toggle::after {
+    float: right;
+    margin-top: 0.65em;
+}
+#browse-channel-modal .modal-dialog .modal-content {
+    height: 500px;
+}
+#browse-channel-modal .modal-body .channels-belongs-to {
+    margin-top: 1em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 180px;
+}
+#browse-channel-modal .modal-body .channels-belongs-to .head-line {
+    color: #495050;
+    background: #5ebee812;
+    padding: 0.5em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+#browse-channel-modal .modal-body .channels-belongs-to .head-line h6{
+    color: #495050;
+    margin: 0;
+    font-size: 15px;
+}
+#browse-channel-modal .modal-body .channels-belongs-to .your-channels {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border-top: 1px solid #dfdfdf;
+}
+#browse-channel-modal .modal-body .channels-belongs-to .your-channels:hover {
+    background: #5ebee812;
+    color: #495050;
+    border: 1px solid #85cae8;
+    border-radius: 10px;
+}
+#browse-channel-modal .modal-body .channels-belongs-to .your-channels h6, #browse-channel-modal .modal-body .channels-belongs-to .your-channels p {
+    font-size: 15px;
+    margin: 0;
+    color: #495050;
+}
+#create-channel-modal .modal-body .switch {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 34px;
+}
+#create-channel-modal .modal-body .switch input {display:none;}
+#create-channel-modal .modal-body .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ca2222;
+  -webkit-transition: .4s;
+  transition: .4s;
+   border-radius: 34px;
+}
+#create-channel-modal .modal-body .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+#create-channel-modal .modal-body input:checked + .slider {
+  background-color: #2ab934;
+}
+#create-channel-modal .modal-body input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+#create-channel-modal .modal-body input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(84px);
+}
+/*------ ADDED CSS ---------*/
+#create-channel-modal .modal-body .slider:
+
+{
+ content:'PRIVATE';
+ color: white;
+ display: block;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ top: 50%;
+ left: 50%;
+ font-size: 10px;
+ font-family: Verdana, sans-serif;
+}
+#create-channel-modal .modal-body input:checked + .slider:after
+{
+  content:'PUBLIC';
+}
+/*--------- END --------*/
+#create-channel-modal .modal-body .channel-info .form-group label {
+    font-weight: bold;
+}
+#create-channel-modal .modal-body .channel-info .form-group label span{
+    font-weight: normal;
+}
+#browse-direct-msgs-modal .modal-dialog, #create-channel-modal .modal-dialog{
+    max-width: 1000px;
+    margin: 1.75rem auto;
+}
+#browse-direct-msgs-modal .modal-body .search-directmsgs .form-inline .form-control {
+    width: 89%;
+}
+#browse-direct-msgs-modal .modal-dialog .modal-content {
+    height: 500px;
+}
+#browse-direct-msgs-modal  .modal-body .recent-convo {
+    margin-top: 1em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 310px;
+}
+#browse-direct-msgs-modal  .modal-body .recent-convo .head-line {
+    color: #495050;
+    background: #5ebee812;
+    padding: 0.5em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+#browse-direct-msgs-modal .modal-body .recent-convo .head-line h6{
+    color: #495050;
+    margin: 0;
+    font-size: 15px;
+}
+#browse-direct-msgs-modal .modal-body .recent-convo .convo {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border-top: 1px solid #dfdfdf;
+}
+#browse-direct-msgs-modal .modal-body .recent-convo .convo:hover {
+    background: #5ebee812;
+    color: #495050;
+    border: 1px solid #85cae8;
+    border-radius: 10px;
+}
+#browse-direct-msgs-modal .modal-body .recent-convo .convo a img {
+    display: inline-block;
+    width: auto;
+    height: 60px;
+}
+#browse-direct-msgs-modal .modal-body .recent-convo .convo a h5{
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 0.5em;
+    color: #495050;
+}
+#browse-direct-msgs-modal .modal-body .recent-convo .convo a span{
+    font-size: 10px;
+    margin-left: -0.8em;
+    color: green;
+}
+#invite-people-modal .modal-dialog{
+    max-width: 800px;
+}
+#invite-people-modal .modal-content .modal-header .modal-title {
+    text-align: center;
+    font-weight: normal;
+}
+#invite-people-modal .modal-content .modal-header .modal-title span {
+    font-weight: bold;
+}
+#invite-people-modal .modal-content .modal-header button span {
+    font-size: 50px;
+}
+#invite-people-modal .modal-header .close {
+    padding: 1rem;
+    margin: 0rem 0rem -1rem auto;
+}
+#invite-people-modal .modal-body #example-textarea {
+    display: none;
+}
+#invite-people-modal .modal-body .add-people .email, #invite-people-modal .modal-body .add-people .name {
+    margin-bottom: 0;
+}
+#invite-people-modal .modal-body .add-people .form-group label {
+    font-weight: bold;
+    font-size: 18px;
+}
+#invite-people-modal .modal-body .add-people .form-group button{
+    float: left;
+    margin-left: 0.3em;
+}
+#invite-people-modal .modal-body .add-people .form-group button span {
+    font-size: 35px;
+}
+#invite-people-modal .modal-body .add-more-divs {
+    display: inline-block;
+}
+#invite-people-modal .modal-body .add-more-divs::before {
+    font-family: FontAwesome;
+    content: "\f055";
+    cursor: pointer;
+    color: #309fd0;
+}
+#invite-people-modal .modal-body .add-more-divs input {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #007bff;
+}
+#invite-people-modal .modal-body .add-more-divs input:hover {
+    color: #0056b3;
+}
+#invite-people-modal .modal-body .connect-google-contacts{
+    display: inline-block;
+    float: right;
+    margin-right: 3em;
+}
+#invite-people-modal .modal-body .default-channels {
+    margin-top: 1em;
+}
+#invite-people-modal .modal-body .default-channels h5 {
+    margin-bottom: 0;
+    font-size: 19px;
+}
+#invite-people-modal .modal-body .default-channels p {
+    margin-bottom: 0;
+}
+#invite-people-modal .modal-body .default-channels p span {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #828282;
+}
+/*  content of main chatbox changes in laptop screen */
+#team-dashboard #foo .user-settings .set-status .dropdown-menu .dropdown-item:first-child:hover {
+    color: #fff;
+    background: none;
+}
+#team-dashboard #foo .user-settings .set-status .dropdown-menu .dropdown-item:first-child {
+    border-bottom: 1px solid #fff;
+}
+#team-dashboard #foo .user-settings .set-status .dropdown-menu p{
+    margin: 0;
+    padding: 0.3em 1.3em;
+    font-size: 12px;
+}
+#team-dashboard #foo .user-settings .set-status .dropdown-menu .dropdown-item span {
+    color: #203850;
+    padding-right: 1em;
+}
+
+/* content of main chatbox changes in laptop screen RIGHT SIDE PANEL AFTER 8/3 */

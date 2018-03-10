@@ -1,0 +1,904 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/wm-style.css">
+        <link rel="stylesheet" href="css/wm-responsive.css">
+        <link rel="stylesheet" href="css/fontawesome-all.css">
+        <title>Let's Chat</title>
+    </head>
+    <body>
+        <section id="team-dashboard">
+            <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-2 col-md-4" id="channel-list">
+                <div id="team-menu">
+                    <div class="container-fluid padding-left">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="team-name">
+                                    <a href="#" onclick="toggle_visibility('foo');">
+                                        <h5>team name</h5>
+                                        <span><i class="fas fa-angle-down"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="team-mute-notification">
+                                    <a href="#" onclick="toggle_visibility('foo1');" data-toggle="tooltip" title="Notifications"><i class="fas fa-bell"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="team-user-name">
+                                    <a href="#" data-toggle="tooltip" title="Active"><span class="presence-status active"> <i class="fas fa-circle"></i></span></a>
+                                    <a href="#" onclick="toggle_visibility('foo');">
+                                        <h6>user name</h6>
+                                    </a>
+                                    <span class="status"> <i class="fas fa-comments"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="foo">
+                        <div class="user-look">
+                            <div class="row">
+                                <div class="col-md-4 padding-right">
+                                    <figure class="user-img">
+                                        <img src="images/avtar.png" class="img-fluid" alt="">
+                                    </figure>
+                                </div>
+                                <div class="col-md-8 padding-right">
+                                    <h3>user name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-settings">
+                            <ul>
+                                <li class="set-status">
+                                    <div class="btn-group dropright">
+                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        set a status
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">
+                                                <form class="form-inline">
+                                                    <div class="input-group mb-2 mr-sm-2">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <i class="fas fa-smile"></i>
+                                                            </div>
+                                                        </div>
+                                                        <input type="text" class="form-control" id="inlineFormInputGroupStatus" placeholder="What's Your Status?">
+                                                    </div>
+                                                </form>
+                                            </a>
+                                            <p>Suggested</p>
+                                            <a class="dropdown-item" href="#"> <span><i class="fas fa-users"></i></span> in a meeting</a>
+                                            <a class="dropdown-item" href="#"> <span><i class="fas fa-bus"></i></span> commuting</a>
+                                            <a class="dropdown-item" href="#"> <span><i class="fas fa-stethoscope"></i></span> out sick</a>
+                                            <a class="dropdown-item" href="#"> <span><i class="fas fa-road"></i></span> vacationing</a>
+                                            <a class="dropdown-item" href="#"> <span><i class="fas fa-laptop"></i></span> working remotely</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="profile-account">
+                                    <a href=""> profile & account</a>
+                                </li>
+                                <li class="set-away">
+                                    <a href=""> set yourself to <strong>away</strong></a>
+                                </li>
+                                <li class="help">
+                                    <a href="">help & feedback</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="admin-look">
+                            <div class="row">
+                                <div class="col-md-4 padding-right">
+                                    <figure class="admin-img">
+                                        <img src="images/avtar.png" class="img-fluid" alt="">
+                                    </figure>
+                                </div>
+                                <div class="col-md-8 padding-right">
+                                    <h3>workplace name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admin-settings">
+                            <ul>
+                                <li class="administration">
+                                    <div class="btn-group dropright">
+                                        <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Administration
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">manage members</a>
+                                            <a class="dropdown-item" href="#">manage apps</a>
+                                            <a class="dropdown-item" href="#">workspace settings</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="invite people">
+                                    <a href=""> invite people</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="workplace-settings">
+                            <ul>
+                                <li class="customize">
+                                    <a href=""> invite people</a>
+                                </li>
+                                <li class="analytics">
+                                    <a href=""> invite people</a>
+                                </li>
+                                <li class="sign-out-workplace">
+                                    <a href=""> sign out of <strong>workplace 1</strong> </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sign-in-to-another-workplace">
+                            <a href=""> sign in to another workplace..</a>
+                        </div>
+                        <div class="chat-app">
+                            <a href="">
+                                <div class="row">
+                                    <div class="col-md-4 padding-right padding-left">
+                                        <img src="images/avtar.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-md-8 padding-right">
+                                        <h6>open the chat app</h6>
+                                        <span><i class="fas fa-sign-in-alt"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="foo1">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="snooze-notifications">
+                                    <h6>snooze notifications</h6>
+                                    <ul>
+                                        <li><a href="">20 minutes</a></li>
+                                        <li><a href="">1 hour</a></li>
+                                        <li><a href="">2 hours</a></li>
+                                        <li><a href="">4 hours</a></li>
+                                        <li><a href="">8 hours</a></li>
+                                        <li><a href="">24 hours</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="do-not-disturb">
+                                    <a href="">do not disturb schedule</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="notification-preferences">
+                                    <a href="">notification preferences</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="diff-channels" class="container-fluid padding-left padding-right">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="browse-channel">
+                                <button type="button" class="btn btn-primary my-btn" data-toggle="modal" data-target="#browse-channel-modal">
+                                channels
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="create-channel">
+                                <button type="button" class="btn btn-primary my-btn" data-toggle="modal" data-target="#create-channel-modal">
+                                <i class="fas fa-plus-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="nav flex-column nav-pills" id="v-channel-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-channel1-tab" data-toggle="pill" href="#v-pills-channel1" role="tab" aria-controls="v-pills-channel1" aria-selected="true"><i class="fas fa-hashtag"></i> channel1</a>
+                            <a class="nav-link" id="v-pills-channel2-tab" data-toggle="pill" href="#v-pills-channel2" role="tab" aria-controls="v-pills-channel2" aria-selected="false"><i class="fas fa-hashtag"></i> channel2</a>
+                            <a class="nav-link" id="v-pills-channel3-tab" data-toggle="pill" href="#v-pills-channel3" role="tab" aria-controls="v-pills-channel3" aria-selected="false"><i class="fas fa-hashtag"></i> channel3</a>
+                            <a class="nav-link" id="v-pills-channel4-tab" data-toggle="pill" href="#v-pills-channel4" role="tab" aria-controls="v-pills-channel4" aria-selected="false"><i class="fas fa-hashtag"></i> channel4</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- browse-channel Modal -->
+                <div class="modal fade" id="browse-channel-modal" tabindex="-1" role="dialog" aria-labelledby="browse-channel-modalTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="browse-channel-modalTitle">browse channels</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="search-channels">
+                                    <form class="form-inline">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search Channels" aria-label="Search">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    </form>
+                                </div>
+                                <div class="show-channels">
+                                    <div class="dropdown">
+                                        <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        show : <span>all channels</span>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <a class="dropdown-item" href="#">All Channels</a>
+                                            <a class="dropdown-item" href="#">Private Channels </a>
+                                            <a class="dropdown-item" href="#">Public channels</a>
+                                            <a class="dropdown-item" href="#">Archived channels</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sort-channels">
+                                    <div class="dropdown">
+                                        <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        sort : <span>channel name</span>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <a class="dropdown-item" href="#">Channel Name</a>
+                                            <a class="dropdown-item" href="#">Name of Creator </a>
+                                            <a class="dropdown-item" href="#">Creation Date</a>
+                                            <a class="dropdown-item" href="#">Members</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="channels-belongs-to">
+                                    <div class="head-line">
+                                        <h6>channels you belongs to</h6>
+                                    </div>
+                                    <div class="your-channels">
+                                        <a href="">
+                                            <h6>channel namne</h6>
+                                            <p>channel description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                            <p>create by <span>name</span> on feb 27th 2018 </p>
+                                        </a>
+                                    </div>
+                                    <div class="your-channels">
+                                        <a href="">
+                                            <h6>channel namne</h6>
+                                            <p>channel description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                            <p>create by <span>name</span> on feb 27th 2018 </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- create-channel Modal -->
+                <div class="modal fade" id="create-channel-modal" tabindex="-1" role="dialog" aria-labelledby="create-channel-modalTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="create-channel-modalTitle">create a channel</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <label class="switch">
+                                    <input type="checkbox" id="togBtn">
+                                    <div class="slider round"></div>
+                                </label>
+                                <form class="channel-info">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name"  placeholder="e.g. #leads">
+                                        <small id="nameHelp" class="form-text text-muted">Name must be lwercase without spaces or periods, and shorter that 20 character.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="purpose">Purpose <span>(optional)</span> </label>
+                                        <input type="text" class="form-control" id="purpose">
+                                        <small id="purposeHelp" class="form-text text-muted">What's this channel about?</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="search">Send invites to: <span>(optional)</span> </label>
+                                        <input class="form-control" type="search" placeholder="Search by Name" aria-label="Search">
+                                        <small id="searchHelp" class="form-text text-muted">Search upto 1000 people to add this channel.</small>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn " data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="diff-direct-msgs" class="container-fluid padding-left padding-right">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="browse-direct-msgs">
+                                <button type="button" class="btn btn-primary my-btn" data-toggle="modal" data-target="#browse-direct-msgs-modal">
+                                direct messages <span><i class="fas fa-plus-circle"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="nav flex-column nav-pills" id="v-direct-msgs-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-dir1-tab" data-toggle="pill" href="#v-pills-dir1" role="tab" aria-controls="v-pills-dir1" aria-selected="true">dir1 <span class="Close"><i class="fas fa-times-circle"></i></span> </a>
+                            <a class="nav-link" id="v-pills-dir2-tab" data-toggle="pill" href="#v-pills-dir2" role="tab" aria-controls="v-pills-dir2" aria-selected="false">dir2 <span class="Close"><i class="fas fa-times-circle"></i></span></a>
+                            <a class="nav-link" id="v-pills-dir3-tab" data-toggle="pill" href="#v-pills-dir3" role="tab" aria-controls="v-pills-dir3" aria-selected="false">dir3 <span class="Close"><i class="fas fa-times-circle"></i></span></a>
+                            <a class="nav-link" id="v-pills-dir4-tab" data-toggle="pill" href="#v-pills-dir4" role="tab" aria-controls="v-pills-dir4" aria-selected="false">dir4 <span class="Close"><i class="fas fa-times-circle"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- diff-direct-msgs Modal -->
+                <div class="modal fade" id="browse-direct-msgs-modal" tabindex="-1" role="dialog" aria-labelledby="browse-direct-msgs-modalTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="browse-direct-msgs-modalTitle">Direct Messages</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="search-directmsgs">
+                                    <form class="form-inline">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Find or Start a Conversation" aria-label="Search">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
+                                    </form>
+                                </div>
+                                <div class="recent-convo">
+                                    <div class="head-line">
+                                        <h6>recent conversations</h6>
+                                    </div>
+                                    <div class="convo">
+                                        <a href="">
+                                            <img src="images/avtar.png" class="img-fluid" alt="">
+                                            <h5>name</h5>
+                                            <span class="status"><i class="fas fa-circle"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="convo">
+                                        <a href="">
+                                            <img src="images/avtar.png" class="img-fluid" alt="">
+                                            <h5>name</h5>
+                                            <span class="status"><i class="fas fa-circle"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="invite-people" class="container-fluid padding-left">
+                    <!-- invite-people modal -->
+                    <button type="button" class="btn btn-primary my-btn" data-toggle="modal" data-target="#invite-people-modal">
+                    <span><i class="fas fa-plus"></i></span> invite people
+                    </button>
+                    <!-- invite-people Modal -->
+                    <div class="modal fade" id="invite-people-modal" tabindex="-1" role="dialog" aria-labelledby="invite-people-modalTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="invite-people-modalTitle">
+                                        <i class="fab fa-telegram-plane"></i> <br>
+                                        invite members to <span>team name</span>
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="example">
+                                        <form class="add-people">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-5 email">
+                                                    <label for="inputEmail">Email Adress</label>
+                                                </div>
+                                                <div class="form-group col-md-5 name">
+                                                    <label for="inputName">Full Name (optional) </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-5">
+                                                    <!-- <label for="inputEmail">Email Adress</label> -->
+                                                    <input type="email" class="form-control" id="inputEmail" placeholder="name@exaple.com">
+                                                </div>
+                                                <div class="form-group col-md-5">
+                                                    <!-- <label for="inputName">Full Name (optional) </label> -->
+                                                    <input type="text" class="form-control" id="inputName" placeholder="Optional">
+                                                </div>
+                                                <div class="form-group col-md-2">
+                                                    <button type="button" class="close" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <textarea class="example-default-value" id="example-textarea">
+                                        <form class="add-people">
+                                            <div class="form-row">
+                                              <div class="form-group col-md-5">
+                                                <input type="email" class="form-control" id="inputEmail" placeholder="name@exaple.com">
+                                              </div>
+                                              <div class="form-group col-md-5">
+                                                <input type="text" class="form-control" id="inputName" placeholder="Optional">
+                                              </div>
+                                              <div class="form-group col-md-2">
+                                                  <button type="button" class="close" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                              </div>
+                                            </div>
+                                         </form>
+                                    </textarea>
+                                    <div class="add-more-divs">
+                                        <input type="button" value="Add another" onclick="example_append()" />
+                                    </div>
+                                    <div class="connect-google-contacts">
+                                        <a href="">
+                                        <span><i class="fab fa-google"></i></span>
+                                        connect google contacts
+                                        </a>
+                                    </div>
+                                    <div class="default-channels">
+                                        <h5>default channels</h5>
+                                        <p> New <span>Members</span> will automatically join <span>Default 1</span> and <span>Default 2</span> <a href="#">Edit/add</a> </p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Send Invitations</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-8" id="chat-box">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div id="main-chatbox" class="container-fluid">
+                            <!-- <div class="tab-content" id="v-channel-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-channel1" role="tabpanel" aria-labelledby="v-pills-channel1-tab">.1..</div>
+                                <div class="tab-pane fade" id="v-pills-channel2" role="tabpanel" aria-labelledby="v-pills-channel2-tab">.2..</div>
+                                <div class="tab-pane fade" id="v-pills-channel3" role="tabpanel" aria-labelledby="v-pills-channel3-tab">3...</div>
+                                <div class="tab-pane fade" id="v-pills-channel4" role="tabpanel" aria-labelledby="v-pills-channel4-tab">..4.</div>
+                                </div> -->
+                            <!-- <div class="tab-content" id="v-direct-msgs-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-dir1" role="tabpanel" aria-labelledby="v-pills-dir1-tab">.11..</div>
+                                <div class="tab-pane fade" id="v-pills-dir2" role="tabpanel" aria-labelledby="v-pills-dir2-tab">.22..</div>
+                                <div class="tab-pane fade" id="v-pills-dir3" role="tabpanel" aria-labelledby="v-pills-dir3-tab">3.3..</div>
+                                <div class="tab-pane fade" id="v-pills-dir4" role="tabpanel" aria-labelledby="v-pills-dir4-tab">.4.4.</div>
+                                </div> -->
+
+                        </div>
+                    </div>
+                    <div class="col-md-2 padding-right">
+                        <div id="right-side-pannel" class="container-fluid padding-right">
+                            <!-- Button trigger modal -->
+                            <div class="search">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#searchmodal">
+                                  search <span><i class="fas fa-search"></i></span>
+                                </button>
+                            </div>
+
+                            <div class="directory">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#directorymodal">
+                                  directory <span><i class="fas fa-users"></i></span>
+                                </button>
+                            </div>
+                            <div class="files">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#filesmodal">
+                                  files <span><i class="fas fa-file"></i></span>
+                                </button>
+                            </div>
+                            <div class="todo">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#todomodal">
+                                  to-do <span><i class="fas fa-check-square"></i></span>
+                                </button>
+                            </div>
+                            <div class="notes">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#notesmodal">
+                                  notes <span><i class="fas fa-sticky-note"></i></span>
+                                </button>
+                            </div>
+                            <div class="fav">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#favmodal">
+                                  fav <span><i class="fas fa-star"></i></span>
+                                </button>
+                            </div>
+                            <div class="reminder">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#remindermodal">
+                                  reminder <span><i class="fas fa-clock"></i></span>
+                                </button>
+                            </div>
+                            <div class="apps">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#appsmodal">
+                                  apps <span> <i class="fas fa-th-large"></i></span>
+                                </button>
+                            </div>
+
+                        </div>
+                        <!-- Search Modal -->
+                        <div class="modal fade" id="searchmodal" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Search Here</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <nav class="navbar navbar-light">
+                                  <form class="form-inline">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                  </form>
+                                </nav>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Directory Modal -->
+                        <div class="modal fade" id="directorymodal" tabindex="-1" role="dialog"  aria-hidden="true">
+                          <div class="modal-dialog " role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">workspace directory</h5>
+                                <div class="directory-settings">
+                                    <a href=""> <i class="fas fa-cog"></i> </a>
+                                </div>
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="people">
+                                <a href="">
+                                    <img src="images/avtar.png" class="img-fluid" alt="">
+                                    <h5>name</h5>
+                                    <span class="status"><i class="fas fa-circle"></i></span>
+                                </a>
+                                </div>
+                                <div class="people">
+                                <a href="">
+                                    <img src="images/avtar.png" class="img-fluid" alt="">
+                                    <h5>name</h5>
+                                    <span class="status"><i class="fas fa-circle"></i></span>
+                                </a>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Files Modal -->
+                        <div class="modal fade" id="filesmodal" tabindex="-1" role="dialog"  aria-hidden="true">
+                          <div class="modal-dialog " role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">your files</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="file-types">
+                                  <div class="dropdown">
+                                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      All file types
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#"><span><i class="fas fa-clipboard"></i></span>all file types</a>
+                                      <a class="dropdown-item" href="#"><span><i class="fas fa-code"></i></span>snippets</a>
+                                      <a class="dropdown-item" href="#"><span><i class="fas fa-image"></i></span>images</a>
+                                      <a class="dropdown-item" href="#"><span><i class="fas fa-video"></i></span>video</a>
+                                      <a class="dropdown-item" href="#"><span><i class="fas fa-file-pdf"></i></span>PDF files</a>
+                                      <a class="dropdown-item" href="#"><span><i class="fas fa-file-alt"></i></span>spreadsheets</a>
+                                      <a class="dropdown-item" href="#"><span><i class="fab fa-google-drive"></i></span>google docs</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <ul class="nav nav-pills" id="pills-file-tab" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" id="pills-everyone-tab" data-toggle="pill" href="#pills-everyone" role="tab" aria-controls="pills-everyone" aria-selected="true">everyone</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="pills-onlyyou-tab" data-toggle="pill" href="#pills-onlyyou" role="tab" aria-controls="pills-onlyyou" aria-selected="false">just you</a>
+                                  </li>
+                                </ul>
+                                <div class="tab-content" id="pills-file-tabContent">
+                                  <div class="tab-pane fade show active" id="pills-everyone" role="tabpanel" aria-labelledby="pills-everyone-tab">
+                                      <div class="diff-files">
+                                          <a href="">
+                                              <img src="images/file.png" class="img-fluid" alt="">
+                                              <p>file name</p> <br>
+                                              <p> <span>person</span> today at 12:00 AM </p>
+
+                                          </a>
+                                          <div class="hover-display-block">
+                                              <a href="" class="share">
+                                                  <i class="fas fa-share"></i>
+                                              </a>
+
+                                              <a href="" class="star">
+                                                  <i class="fas fa-star"></i>
+                                              </a>
+                                              <a href="" class="delete">
+                                                <i class="fas fa-trash-alt"></i>
+                                              </a>
+                                          </div>
+                                      </div>
+                                      <div class="diff-files">
+                                          <a href="">
+                                              <img src="images/file.png" class="img-fluid" alt="">
+                                              <p>file name</p> <br>
+                                              <p> <span>person</span> today at 10:00 AM </p>
+
+                                          </a>
+                                          <div class="hover-display-block">
+                                              <a href="" class="share">
+                                                  <i class="fas fa-share"></i>
+                                              </a>
+
+                                              <a href="" class="star">
+                                                  <i class="fas fa-star"></i>
+                                              </a>
+                                              <a href="" class="delete">
+                                                <i class="fas fa-trash-alt"></i>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="tab-pane fade" id="pills-onlyyou" role="tabpanel" aria-labelledby="pills-onlyyou-tab">
+                                      <div class="diff-files">
+                                          <a href="">
+                                              <img src="images/file.png" class="img-fluid" alt="">
+                                              <p>file name</p> <br>
+                                              <p> <span>person</span> today at 12:00 AM </p>
+
+                                          </a>
+                                          <div class="hover-display-block">
+                                              <a href="" class="share">
+                                                  <i class="fas fa-share"></i>
+                                              </a>
+
+                                              <a href="" class="star">
+                                                  <i class="fas fa-star"></i>
+                                              </a>
+                                              <a href="" class="delete">
+                                                <i class="fas fa-trash-alt"></i>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- To-Do Modal -->
+                        <div class="modal fade" id="todomodal" tabindex="-1" role="dialog"  aria-hidden="true">
+                          <div class="modal-dialog " role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">shared to-dos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <ul class="nav nav-pills" id="todo-tab" role="tablist">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">all</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-my-tab" data-toggle="pill" href="#pills-my" role="tab" aria-controls="pills-my" aria-selected="false">my to-dos</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="todo-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+                                          <input id="new-task" type="text" placeholder="new-item">
+                                          <button> <span><a href="#"><i class="fas fa-plus"></i></a></span> </button>
+                                        <h3>Todo</h3>
+                                        <ul id="incomplete-tasks">
+                                          <li>
+                                              <input type="checkbox">
+                                              <label>call john</label>
+                                              <input type="text">
+                                              <button class="edit"> <span><i class="fas fa-edit"></i></span> </button>
+                                              <button class="delete"> <span><i class="fas fa-trash-alt"></i></span> </button>
+                                          </li>
+                                          <li class="editMode">
+                                              <input type="checkbox">
+                                              <label>complete css</label>
+                                              <input type="text" value="Complete CSS">
+                                              <button class="edit"> <span><i class="fas fa-edit"></i></span> </button>
+                                              <button class="delete"> <span><i class="fas fa-trash-alt"></i></span> </button>
+                                          </li>
+                                        </ul>
+                                        <h3>Completed</h3>
+                                        <ul id="completed-tasks">
+                                          <li>
+                                              <input type="checkbox" checked>
+                                              <label>set up project</label>
+                                              <input type="text">
+                                              <button class="edit"> <span><i class="fas fa-edit"></i></span> </button>
+                                              <button class="delete"> <span><i class="fas fa-trash-alt"></i></span> </button>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-my" role="tabpanel" aria-labelledby="pills-my-tab">
+
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Notes Modal -->
+                        <div class="modal fade" id="notesmodal" tabindex="-1" role="dialog"  aria-hidden="true">
+                          <div class="modal-dialog " role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Your Notes
+                                    <a href="" class="add-note" style="font-size:20px; padding-left:1rem;"><i class="fas fa-plus"></i></a>
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <ul class="notes-content">
+                                    <li>
+                                      <a href="#">
+                                          <h2>Title #1</h2>
+                                          <p>Text Content #1</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                          <h2>Title #2</h2>
+                                          <p>Text Content #2</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                          <h2>Title #3</h2>
+                                          <p>Text Content <span id="3"></span></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Fav Modal -->
+                        <div class="modal fade" id="favmodal" tabindex="-1" role="dialog"  aria-hidden="true">
+                          <div class="modal-dialog " role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">my favorities</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+ <ul class="nav nav-pills mb-3" id="fav-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="fav-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+  </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Reminder Modal -->
+                        <div class="modal fade" id="remindermodal" tabindex="-1" role="dialog"  aria-hidden="true">
+                          <div class="modal-dialog " role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                reminder
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Apps Modal -->
+                        <div class="modal fade" id="appsmodal" tabindex="-1" role="dialog"  aria-hidden="true">
+                          <div class="modal-dialog " role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                apps
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+<script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript">
+            <!--
+            function toggle_visibility(id) {
+                var e = document.getElementById(id);
+                if(e.style.display == 'block')
+                e.style.display = 'none';
+                else
+                e.style.display = 'block';
+            }
+            //-->
+        </script>
+        <script language="javascript">
+            $('.example-default-value').each(function() {
+                var default_value = this.value;
+                $(this).focus(function() {
+                    if(this.value == default_value) {
+                        this.value = '';
+                    }
+                });
+                $(this).blur(function() {
+                    if(this.value == '') {
+                        this.value = default_value;
+                    }
+                });
+            });
+            function example_append() {
+                $('#example').append($('#example-textarea').val());
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
