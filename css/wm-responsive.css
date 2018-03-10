@@ -762,8 +762,63 @@
       position:relative;
       z-index:5;
     }
-    
-        
+    #favmodal #fav-tab .nav-item .nav-link {
+        color: #495050;
+        padding: 0.5rem;
+        text-transform: capitalize;
+        background: none;
+        border: none;
+        border-radius: 0;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    #favmodal #fav-tab .nav-item .nav-link.active, #favmodal #fav-tab .nav-item .show>.nav-link {
+        border-bottom: 3px solid green;
+    }
+    #favmodal #fav-tabContent .people {
+        margin-bottom: 0.5em;
+        padding: 0.5em;
+        border-bottom: 1px solid #e4e1d0;
+    }
+    #favmodal #fav-tabContent  .people a img {
+        display: inline-block;
+        width: auto;
+        height: 60px;
+    }
+    #favmodal #fav-tabContent .people a h5 {
+        display: inline-block;
+        font-size: 18px;
+        padding: 0 0.5em;
+        color: #495050;
+    }
+    #favmodal #fav-tabContent .people a span {
+        font-size: 10px;
+        margin-left: -0.8em;
+        color: green;
+    }
+    #favmodal #fav-tabContent .msgs {
+        margin-bottom: 0.5em;
+        padding: 0.5em;
+        border-bottom: 1px solid #e4e1d0;
+    }
+    #favmodal #fav-tabContent .msgs a img {
+        float: left;
+        width: auto;
+        height: 60px;
+        padding-right: 1rem;
+    }
+    #favmodal #fav-tabContent .msgs a  {
+        font-size: 15px;
+        color: #495050;
+    }
+    #favmodal #fav-tabContent .msgs a h5  {
+        font-size: 18px;
+        color: #495050;
+        display: inline-block;
+    }
+    /* right side panel after 11/03  */
+
+
 }
 @media screen and (max-width: 1024px) {
 
