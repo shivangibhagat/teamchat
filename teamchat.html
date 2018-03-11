@@ -864,7 +864,109 @@
                                 </button>
                               </div>
                               <div class="modal-body">
-                                reminder
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="set-reminders">
+                                                <a href="" class="head-line">
+                                                    <span>
+                                                        <i class="far fa-clock"></i>
+                                                    </span>
+                                                    set reminder
+                                                </a>
+                                                <div class="select-members">
+                                                    <h5>reminder for</h5>
+                                                    <ul>
+                                                         <li onclick="this.parentNode.removeChild(this);">
+                                                          <input type="hidden" name="ingredients[]" value="Cheese" />
+                                                          Me
+                                                         </li>
+                                                         <li onclick="this.parentNode.removeChild(this);">
+                                                          <input type="hidden" name="ingredients[]" value="Ham" />
+                                                          #general
+                                                         </li>
+                                                         <li onclick="this.parentNode.removeChild(this);">
+                                                          <input type="hidden" name="ingredients[]" value="Mushrooms" />
+                                                          dir 1
+                                                         </li>
+                                                    </ul>
+                                                    <select onchange="selectIngredient(this);">
+                                                         <option value="Cheese">dir 2</option>
+                                                         <option value="Olives">#channel</option>
+                                                         <option value="Pepperoni">dir 3</option>
+                                                     </select>
+                                                </div>
+                                                <div class="reminder-about">
+                                                    <h5>remind about</h5>
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="set-time">
+                                                    <h5>remind in</h5>
+                                                    <ul>
+                                                        <li>15 minutes</li>
+                                                        <li>30 minutes</li>
+                                                        <li>1 hour</li>
+                                                    </ul>
+                                                    <div class="custom-time">
+                                                        <h5>set custom time and repeat</h5>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="datepicker">
+                                                                    date
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="timepicker">
+                                                                    time
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dropdown">
+                                                          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            do not repeat
+                                                          </button>
+                                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#">do not repeat</a>
+                                                            <a class="dropdown-item" href="#">weekdays (mon - fri)</a>
+                                                            <a class="dropdown-item" href="#">daily</a>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" name="button" class="btn">
+                                                        set reminder
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="upcoming-completed-reminders">
+                                                <div class="upcoming">
+                                                    <h5>upcoming reminders</h5>
+                                                    <div class="remind">
+                                                        <h6>name and description</h6>
+                                                        <a href="#" class="edit"></a>
+                                                        <a href="" class="delete"></a>
+                                                        <p>remind this, them, that</p>
+                                                        <p>05:00 PM | Today</p>
+                                                    </div>
+                                                </div>
+                                                <div class="completed">
+                                                    <h5>completed reminders</h5>
+                                                    <div class="done">
+                                                        <h6>name and description</h6>
+                                                        <a href="" class="delete"></a>
+                                                        <p>remind this, them, that</p>
+                                                        <p>05:00 PM | Today</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
