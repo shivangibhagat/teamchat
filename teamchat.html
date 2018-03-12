@@ -916,17 +916,33 @@
                                                         <div class="row">
                                                             <div class="col-md-6">
                                                                 <div class="datepicker">
-                                                                    date
+                                                                    <div class="dropdown">
+                                                                  <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    Date Picker
+                                                                  </button>
+                                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <a class="dropdown-item" href="#">...</a>
+                                                                    <a class="dropdown-item" href="#">... </a>
+                                                                  </div>
+                                                                </div>
 
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="timepicker">
-                                                                    time
+                                                                    <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Time Picker
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">...</a>
+    <a class="dropdown-item" href="#">... </a>
+  </div>
+</div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="dropdown">
+                                                        <div class="dropdown repeat-option">
                                                           <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                             do not repeat
                                                           </button>
@@ -937,7 +953,7 @@
                                                           </div>
                                                         </div>
                                                     </div>
-                                                    <button type="button" name="button" class="btn">
+                                                    <button type="button" name="button" class="btn set-remin">
                                                         set reminder
                                                     </button>
                                                 </div>
@@ -945,21 +961,71 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="upcoming-completed-reminders">
+                                                <h5>upcoming reminders</h5>
                                                 <div class="upcoming">
-                                                    <h5>upcoming reminders</h5>
+
                                                     <div class="remind">
                                                         <h6>name and description</h6>
-                                                        <a href="#" class="edit"></a>
-                                                        <a href="" class="delete"></a>
+                                                        <div class="edit-del">
+                                                            <a href="#" class="edit"><i class="fas fa-edit"></i></a>
+                                                            <a href="" class="delete"><i class="fas fa-trash-alt"></i></a>
+                                                        </div>
+
+                                                        <p>remind this, them, that</p>
+                                                        <p>05:00 PM | Today</p>
+                                                    </div>
+                                                    <div class="remind">
+                                                        <h6>name and description</h6>
+                                                        <div class="edit-del">
+                                                            <a href="#" class="edit"><i class="fas fa-edit"></i></a>
+                                                            <a href="" class="delete"><i class="fas fa-trash-alt"></i></a>
+                                                        </div>
+                                                        <p>remind this, them, that</p>
+                                                        <p>05:00 PM | Today</p>
+                                                    </div>
+                                                    <div class="remind">
+                                                        <h6>name and description</h6>
+                                                        <div class="edit-del">
+                                                            <a href="#" class="edit"><i class="fas fa-edit"></i></a>
+                                                            <a href="" class="delete"><i class="fas fa-trash-alt"></i></a>
+                                                        </div>
+                                                        <p>remind this, them, that</p>
+                                                        <p>05:00 PM | Today</p>
+                                                    </div>
+                                                    <div class="remind">
+                                                        <h6>name and description</h6>
+                                                        <div class="edit-del">
+                                                            <a href="#" class="edit"><i class="fas fa-edit"></i></a>
+                                                            <a href="" class="delete"><i class="fas fa-trash-alt"></i></a>
+                                                        </div>
                                                         <p>remind this, them, that</p>
                                                         <p>05:00 PM | Today</p>
                                                     </div>
                                                 </div>
+                                                <h5>completed reminders</h5>
                                                 <div class="completed">
-                                                    <h5>completed reminders</h5>
+
                                                     <div class="done">
                                                         <h6>name and description</h6>
-                                                        <a href="" class="delete"></a>
+                                                        <div class="del">
+                                                            <a href="" class="delete"><i class="fas fa-trash-alt"></i></a>
+                                                        </div>
+                                                        <p>remind this, them, that</p>
+                                                        <p>05:00 PM | Today</p>
+                                                    </div>
+                                                    <div class="done">
+                                                        <h6>name and description</h6>
+                                                        <div class="del">
+                                                            <a href="" class="delete"><i class="fas fa-trash-alt"></i></a>
+                                                        </div>
+                                                        <p>remind this, them, that</p>
+                                                        <p>05:00 PM | Today</p>
+                                                    </div>
+                                                    <div class="done">
+                                                        <h6>name and description</h6>
+                                                        <div class="del">
+                                                            <a href="" class="delete"><i class="fas fa-trash-alt"></i></a>
+                                                        </div>
                                                         <p>remind this, them, that</p>
                                                         <p>05:00 PM | Today</p>
                                                     </div>
