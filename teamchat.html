@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="css/wm-style.css">
         <link rel="stylesheet" href="css/wm-responsive.css">
         <link rel="stylesheet" href="css/fontawesome-all.css">
+        <link rel="styleshee" href="css/jquery.timepicker.css" />
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
         <title>Let's Chat</title>
     </head>
     <body>
@@ -527,7 +529,7 @@
                                 </button>
                             </div>
                             <div class="apps">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#appsmodal">
+                                <button type="button" class="btn btn-primary">
                                   apps <span> <i class="fas fa-th-large"></i></span>
                                 </button>
                             </div>
@@ -756,7 +758,7 @@
                             <div class="modal-content">
                               <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLongTitle">Your Notes
-                                    <a href="" class="add-note" style="font-size:20px; padding-left:1rem;"><i class="fas fa-plus"></i></a>
+                                    <a href="" class="add-note" style="font-size:14px; padding-left:1rem;color:#212529;"><i class="fas fa-plus"></i></a>
                                 </h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -905,9 +907,9 @@
                                                 <div class="set-time">
                                                     <h5>remind in</h5>
                                                     <ul>
-                                                        <li>15 minutes</li>
-                                                        <li>30 minutes</li>
-                                                        <li>1 hour</li>
+                                                        <li><a href="">15 minutes</a></li>
+                                                        <li><a href="">30 minutes</a></li>
+                                                        <li><a href="">1 hour</a></li>
                                                     </ul>
                                                     <div class="custom-time">
                                                         <h5>set custom time and repeat</h5>
@@ -915,6 +917,7 @@
                                                             <div class="col-md-6">
                                                                 <div class="datepicker">
                                                                     date
+
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
@@ -938,7 +941,6 @@
                                                         set reminder
                                                     </button>
                                                 </div>
-
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -967,30 +969,6 @@
                                         </div>
                                     </div>
                                 </div>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Apps Modal -->
-                        <div class="modal fade" id="appsmodal" tabindex="-1" role="dialog"  aria-hidden="true">
-                          <div class="modal-dialog " role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                apps
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
                               </div>
                             </div>
                           </div>

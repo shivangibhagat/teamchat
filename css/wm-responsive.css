@@ -816,7 +816,55 @@
         color: #495050;
         display: inline-block;
     }
-    /* right side panel after 11/03  */
+    /* right side panel after 12/03  */
+    #remindermodal .modal-dialog {
+        max-width: 800px;
+    }
+    #remindermodal .modal-content .set-reminders .head-line {
+        color: green;
+        font-weight: bold;
+    }
+    #remindermodal .modal-content .set-reminders .select-members {
+        margin-top: 1rem;
+    }
+    #remindermodal .modal-content .set-reminders h5 {
+        font-size: 15px;
+    }
+    #remindermodal .modal-content .set-reminders .select-members ul{
+        border: 1px solid #e4e1d0;
+        border-radius: 10px;
+    }
+    #remindermodal .modal-content .set-reminders .select-members ul li{
+        padding: 0.3rem 1rem;
+        display: inline-block;
+        cursor: pointer;
+    }
+    #remindermodal .modal-content .set-reminders .select-members select{
+        border: 1px solid #e4e1d0;
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 0.8rem;
+        padding: 0.3rem;
+        margin-bottom: 1rem;
+    }
+    #remindermodal .modal-content .set-reminders .set-time  ul{
+        border: 1px solid #e4e1d0;
+        border-radius: 10px;
+    }
+    #remindermodal .modal-content .set-reminders .set-time ul li a{
+        padding: 0.3rem 1rem;
+        display: inline-block;
+        color: #203850;
+    }
+    #remindermodal .modal-content .set-reminders .set-time ul li a:hover{
+        color: green;
+    }
+    #remindermodal .modal-content .set-reminders .set-time ul li {
+        display: inline-block;
+    }
+    #remindermodal .modal-content .set-reminders .custom-time {
+        margin: 2rem 0;
+    }
 
 
 }
