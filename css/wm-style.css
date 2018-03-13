@@ -134,7 +134,7 @@ button:focus {
     display: none;
     overflow-y: auto;
     height: 80vh;
-    z-index: 1;
+    z-index: 5;
     overflow-x: hidden;
 }
 #team-dashboard #foo .admin-look h3 {

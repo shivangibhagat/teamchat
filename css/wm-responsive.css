@@ -941,6 +941,72 @@
     }
 
 
+    /* style for main chat-box */
+    #main-chatbox #v-direct-msgs-tabContent .chat-here {
+        height: 100vh;
+    }
+    #main-chatbox #v-direct-msgs-tabContent .chat-here .main-header {
+        border-bottom: 1px solid #a7aba7;
+    }
+
+    #main-chatbox #v-direct-msgs-tabContent .chat-here .main-header h3 {
+        display: inline-block;
+        font-size: 23px;
+        margin: 0;
+        color: #203850;
+    }
+    #main-chatbox #v-direct-msgs-tabContent .chat-here .main-header .star {
+        float: right;
+        margin-top: 0.5rem;
+        color: yellow;
+    }
+    #main-chatbox #v-direct-msgs-tabContent .chat-here .main-header p {
+        font-size: 15px;
+        text-transform: capitalize;
+        color: #203850;
+        margin-bottom: 0.5rem;
+    }
+    #main-chatbox #v-direct-msgs-tabContent .chat-here .main-header p span {
+        color: green;
+        font-size: 12px;
+    }
+    #main-chatbox #v-direct-msgs-tabContent .chat-here .swiper-wrapper li  {
+        width: 60px !important;
+        margin-right: 20px !important;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        height: 15px !important;
+        margin-top: -10px !important;
+    }
+    #main-chatbox #v-direct-msgs-tabContent .chat-here .swiper-wrapper li:first-child{
+        margin-left: 2rem;
+    }
+
+    #main-chatbox #v-direct-msgs-tabContent .chat-here .swiper-wrapper .swiper-slide .hover-add {
+       display: inline-block;
+       position: absolute;
+       top: 0rem;
+       right: 0rem;
+       /* padding: 0.6rem 0.9rem; */
+       /* border: 1px solid #fff; */
+       border-radius: 100%;
+       padding-left: 20px;
+       padding-top: 13px;
+       padding-right: 23px;
+       padding-bottom: 16px;
+       background: #ffffff61;
+       display: none;
+       /* opacity: 0.5; */
+    }
+    #main-chatbox #v-direct-msgs-tabContent .chat-here .swiper-container {
+        border-bottom: 1px solid #a7aba7;
+        padding: 0.5rem 0;
+    }
+    #main-chatbox #v-direct-msgs-tabContent .chat-here .swiper-wrapper li:hover .hover-add {
+        display: block;
+    }
+
+
 }
 @media screen and (max-width: 1024px) {
 
