@@ -591,6 +591,10 @@ button:focus {
 }
 
 /* content of main chatbox changes in laptop screen RIGHT SIDE PANEL AFTER 8/3 */
+#right-side-pannel {
+    height: 100vh;
+    background: #007bff;
+}
 #right-side-pannel button {
     text-transform: capitalize;
     color: #fff;
@@ -1102,4 +1106,166 @@ button:focus {
 }
 #remindermodal .modal-content .upcoming-completed-reminders .upcoming {
     margin-bottom: 2rem;
+}
+/* style for main chat-box */
+#main-chatbox #v-direct-msgs-tabContent .chat-here {
+    height: 100vh;
+}
+#main-chatbox #v-direct-msgs-tabContent .chat-here .main-header {
+    border-bottom: 1px solid #a7aba7;
+}
+
+#main-chatbox #v-direct-msgs-tabContent .chat-here .main-header h3 {
+    display: inline-block;
+    font-size: 23px;
+    margin: 0;
+    color: #203850;
+}
+#main-chatbox #v-direct-msgs-tabContent .chat-here .main-header .star {
+    float: right;
+    margin-top: 0.5rem;
+    color: yellow;
+}
+#main-chatbox #v-direct-msgs-tabContent .chat-here .main-header p {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #203850;
+    margin-bottom: 0.5rem;
+}
+#main-chatbox #v-direct-msgs-tabContent .chat-here .main-header p span {
+    color: green;
+    font-size: 12px;
+}
+#main-chatbox #v-direct-msgs-tabContent .chat-here .swiper-wrapper li  {
+    width: 60px !important;
+    margin-right: 20px !important;
+}
+.swiper-button-next, .swiper-button-prev {
+    height: 15px !important;
+    margin-top: -10px !important;
+}
+#main-chatbox #v-direct-msgs-tabContent .chat-here .swiper-wrapper li:first-child{
+    margin-left: 2rem;
+}
+
+#main-chatbox #v-direct-msgs-tabContent .chat-here .swiper-wrapper .swiper-slide .hover-add {
+   display: inline-block;
+   position: absolute;
+   top: 0rem;
+   right: 0rem;
+   /* padding: 0.6rem 0.9rem; */
+   /* border: 1px solid #fff; */
+   border-radius: 100%;
+   padding-left: 20px;
+   padding-top: 13px;
+   padding-right: 23px;
+   padding-bottom: 16px;
+   background: #ffffff61;
+   display: none;
+   /* opacity: 0.5; */
+}
+#main-chatbox #v-direct-msgs-tabContent .chat-here .swiper-container {
+    border-bottom: 1px solid #a7aba7;
+    padding: 0.5rem 0;
+}
+#main-chatbox #v-direct-msgs-tabContent .chat-here .swiper-wrapper li:hover .hover-add {
+    display: block;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .date-line {
+    margin-bottom: -50px;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .date-line p {
+    text-transform: capitalize;
+    position: relative;
+    background: #fff;
+    color: #000;
+    padding: 0.3rem 0.8rem;
+    left: 25rem;
+    display: inline-block;
+    top: -2.3rem;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .msgs img  {
+    float: left;
+    height: 50px;
+    width: auto;
+    margin-right: 1rem;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .msgs h6 {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .msgs .time {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 10px;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .msgs .hover-box .dropdown-toggle::after {
+    display: none;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .msgs .me:hover .hover-box, #main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .msgs .you:hover .hover-box {
+    display: block;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .msgs .hover-box {
+    display: inline-block;
+    position: absolute;
+    right: 2.5rem;
+    display: none;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .msgs .hover-box a {
+    text-transform: capitalize;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .msgs .hover-box .main {
+    color: #8888;
+    font-size: 15px;
+    border: 1px solid #8888;
+    padding: 0.2rem;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .msgs .hover-box .share:hover{
+    color: green;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .msgs .hover-box .star:hover{
+    color: yellow;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area .msgs .hover-box .delete:hover{
+    color: red;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box{
+    height: 78vh;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .msg-area{
+   height: 72vh;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .typing-area .input-group-prepend .dropdown-toggle::after {
+    display: none;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .typing-area .input-group-append {
+   background: #ddd;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+#main-chatbox #v-direct-msgs-tabContent .chatting-box .typing-area .input-group-append a  {
+    display: inline-block;
+    padding: 0rem 0.5rem;
+    color: #203850;
+    padding-top: 0.4rem;
+}
+#codesnippetmodal .modal-body .form-check {
+    float: right;
+}
+ .form-check-input {
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: -1rem;
+}
+#codesnippetmodal .modal-body .form-group label {
+    float: right;
+    text-transform: capitalize;
+}
+#codesnippetmodal .modal-body .form-group label span{
+    float: right;
 }
